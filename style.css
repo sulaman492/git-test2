@@ -1,0 +1,115 @@
+ @import url(https://fonts.google.com/specimen/Figtree);
+
+ * {
+     padding: 0;
+     margin: 0;
+ }
+
+ body {
+     background-color: hsl(47, 88%, 63%);
+     height: 100vh;
+     overflow: hidden;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ main {
+     width: 30%;
+     height: 70%;
+     border: 2px solid black;
+     padding: 1%;
+     background-color: hsl(0, 0%, 100%);
+     border-radius: 15px;
+     box-shadow: 8px 8px 0px 0px hsl(0, 0%, 5%);
+ }
+
+ figure {
+     width: 95%;
+     aspect-ratio: 16 / 9;
+     margin: 0 auto 1rem auto;
+     margin-top: 1rem;
+ }
+
+ figure img {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+     display: block;
+     object-position: center center;
+     border-radius: 9px;
+ }
+
+ button {
+     color: hsl(0, 0%, 7%);
+     background-color: hsl(47, 88%, 63%);
+     border-radius: 5px;
+     border: none;
+     display: block;
+     width: clamp(50px, 8vw, 250px);
+     height: clamp(15px, 5vh, 35px);
+     font-weight: 700;
+     font-size: clamp(0.6rem, 2vw, 1rem);
+     margin-left: 3%;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     cursor: pointer;
+     /* 🔥 auto-scales */
+     /* font-display: fallback; */
+     /* margin-left: 5%; */
+ }
+
+ article p {
+     margin: 3%;
+     font-family: 'figtree';
+     font-weight: 300;
+     font-size: clamp(0.6rem, 2vw, 1rem);
+
+
+ }
+
+ article h1 {
+     font-family: 'figtree';
+     font-size: clamp(0.59rem, 2vw, 1.5rem);
+     font-weight: 600;
+     margin: 3%;
+ }
+
+ article h1:hover {
+     color: hsl(47, 88%, 63%);
+     cursor: pointer;
+ }
+
+ article p:nth-of-type(2) {
+     margin: 3%;
+     font-family: 'figtree';
+     font-weight: 300;
+     font-size: clamp(0.6rem, 2vw, 1rem);
+     line-height: 1.6;
+     color: hsl(0, 0%, 50%);
+ }
+
+ .man {
+     display: flex;
+     align-items: center;
+     gap: 10px;
+     /* space between image and text */
+     margin: 3%;
+     font-family: 'figtree';
+     font-weight: 800;
+     font-size: clamp(0.6rem, 2vw, 1rem);
+ }
+
+ .man img {
+     width: 30px;
+     height: 30px;
+     border-radius: 50%;
+ }
+
+ .attribution {
+     font-size: 11px;
+     text-align: center;
+ }
+
+ .attribution a {
+     color: hsl(228, 45%, 44%);
+ }
